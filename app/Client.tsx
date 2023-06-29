@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { Card, CardBody, CardFooter } from "@nextui-org/react";
 import NextImage from "next/image";
-export default function page({ product }: { product: any }) {
+export default function Client({ product }: { product: any }) {
   const router = useRouter();
   router.prefetch(`/products/${product.id}`);
   const formatter = new Intl.NumberFormat("en-US", {
