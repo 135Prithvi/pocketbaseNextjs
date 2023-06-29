@@ -6,6 +6,9 @@ export async function initPocketBase() {
   const pb = new PocketBase(
     "https://pocketbase-docker-production-acb9.up.railway.app/"
   );
+  if(process.env.NODE_ENV == "production"){
+    pb.autoCancellation(false)
+  }
   const cookieStore = cookies();
   const auth = cookieStore.get("pb_auth");
 

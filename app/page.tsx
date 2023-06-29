@@ -31,12 +31,12 @@ export default async function home() {
   return (
     <div>
       
-      <h1 className="text-center">
-        <div className="text-5xl font-bold ">
+      <div className="text-center">
+        <h1 className="text-5xl font-bold ">
           {" "}
           Next.js + TailwindCSS
-        </div>
-      </h1>
+        </h1>
+      </div>
       <h1 className="text-5xl font-bold text-black ">{}</h1>{" "}
       <div className="gap-2 grid grid-cols-1 sm:grid-cols-4 p-8 w-full">
         {products.map((product) => (

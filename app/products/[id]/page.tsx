@@ -138,11 +138,11 @@ export default async function ProductPage({
           </div>
         </div>
         <div className=" min-[1024px]:col-start-2 min-[1024px]:col-end-2 max-w-[65ch] mx-auto grid grid-cols-2 gap-x-2 mt-3 w-full">
-          <button className="text-xl bg-blue-600 hover:bg-blue-500 hover:text-white h-10 w-full rounded text-white font-mono font-semibold">
-            <Link href={`/actioncFomplete?productID=${product.id}`}>
+          <Button className="text-xl bg-blue-600 hover:bg-blue-500 hover:text-white h-10 w-full rounded text-white font-mono font-semibold">
+            <Link className="w-full h-full" href={`/actioncomplete?productID=${product.id}`}>
               buy now
             </Link>
-          </button>
+          </Button>
           <ClientButton productId={product.id} />
         </div>
         <div className=" min-[1024px]:col-start-2 min-[1024px]:col-end-2 max-w-[75ch] mx-auto grid grid-cols-3 gap-2 mt-4 w-full">
